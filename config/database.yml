@@ -86,3 +86,5 @@ production:
   database: sticklr_production
   #username: sticklr
   #password: <%= ENV['STICKLR_DATABASE_PASSWORD'] %>
+
+
