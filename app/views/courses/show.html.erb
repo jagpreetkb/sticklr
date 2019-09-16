@@ -24,12 +24,6 @@
         <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary', method: :post %>
 
         <%= form_tag course_enrollments_path(@course) do %>
-
-          <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                  data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                  data-description="A month's subscription"
-                  data-amount="500"
-                  data-locale="auto"></script>
         <% end %>
 
       <% end %>
@@ -70,7 +64,7 @@
 
       <% @course.images.each do |image| %>
         <div> <%= image.caption %> </div>
-        <div> <%= image_tag image.picture.url %> </div>
+        <div> <%= image_tag image.picture.url, size: "100x50" %> </div>
       <% end %>
 
 
