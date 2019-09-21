@@ -34,11 +34,15 @@ gem 'simple_form'
 gem 'devise'
 gem 'stripe'
 gem 'ranked-model'
+gem "mini_magick"
+gem "figaro"
+gem 'carrierwave-aws'
 
 #image
 
 gem 'ranked-model'
 gem 'carrierwave', '~> 2.0'
+gem 'fog-aws', '~> 3.5', '>= 3.5.2'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
