@@ -38,6 +38,9 @@ gem "mini_magick"
 gem "figaro"
 gem 'carrierwave-aws'
 
+#javascript
+gem 'jquery-ui-rails'
+
 #image
 
 gem 'ranked-model'

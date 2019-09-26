@@ -1,3 +1,18 @@
+<script>
+  $(function() {
+    $('.lessons').sortable({
+      update: function( event, ui ) {
+        $.ajax({
+          type: 'PUT',
+          url: ui.item.data('update-url'),
+          dataType: 'json',
+          data: { lesson: { row_order_position: ui.item.index() } }
+        });
+      }
+    });
+   });
+</script>
+
 <br />
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
@@ -28,7 +43,7 @@
 
         <ul class="lessons">
           <% section.lessons.rank(:row_order).each do |lesson| %>
-            <li data-update-url="<%= instructor_lesson_path lesson %>">
+            <li data-update-url="<%= instructor_lesson_path(lesson) %>">
               <div class="row">
                 <div class="col-1">
                   <br />
