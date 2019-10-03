@@ -1,7 +1,0 @@
-SECRET_KEY: 'sk_test_3JakFxc5w1oild1QzbWA3xUu00HVR9uJid'
-PUBLISHABLE_KEY: 'pk_test_V2x1Qcoq49PiYBNt5eZyLOc500LJttbmql'
-
-AWS_ACCESS_KEY: "AKIARKG76GV424UW6JXF"
-AWS_SECRET_KEY: "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"
-AWS_BUCKET: "sticklr-images"
-AWS_REGION:     "us-east-1"
